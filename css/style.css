@@ -1,0 +1,211 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+/*GLOBALES*/
+img{
+    width: 100%;
+    height: auto;
+}
+.contenido{
+    margin:  0 15%;
+    background-color: #ffffff;
+}
+@media (max-width: 768px) {
+    .contenido{
+        margin: 0 2%;
+    }
+}
+h2{
+    font-size: 2rem;
+}
+/*HEADER*/
+header{
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    margin: 0;
+  }
+#ver-ul{
+    display: none;
+}
+label img{
+    width: 20px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    label img{
+        width: 40px;
+        display: block;
+    }
+}
+
+nav ul{
+    margin: 0;
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    nav ul{
+        margin-left: -70%;
+        display: block;
+        padding: 0;
+        width: 70%;
+        position: absolute;
+        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+        transition: 0.6s;
+    }
+  }
+  @media(max-width:768px){
+    #ver-ul:checked ~ nav ul {
+        margin-left: 0;
+        
+    }
+}
+nav ul a{
+    text-decoration: none;
+    margin: 0;
+    
+}
+nav ul a li{
+    list-style: none;
+    margin: 0 1rem 0 0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: #000000;
+}
+@media(max-width:768px){
+    nav ul a li{
+        margin: 0;
+        border-bottom: 1px solid #000000;
+        
+    }
+}
+nav ul a li:hover{
+    background-color: rgba(0, 0, 0, 10%);
+    
+}
+/*IMAGEN DESTACADA*/
+.imagen-principal{
+    height: 500px;
+    background-image: url(../img/imagen\ principal.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: 0.6s;
+}
+.imagen-principal:hover{
+    background-image: url(../img/comparte\ love.jpg);
+    transition: 0.6s;
+}
+.imagen-principal:hover h1{
+    color: black;
+  
+}
+@media(min-width:768px){
+    .imagen-principal{
+        background-attachment: fixed;
+    }
+}
+@media(max-width:768px){
+    .imagen-principal{
+        height: 300px;
+    }
+}
+.imagen-principal h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+/*contenido*/
+.contenido h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.articulos{
+    display: flex;
+    flex: 2 calc(50% - 1rem);
+    flex-wrap:wrap;
+}
+.card{
+    margin: 0.5rem;
+    flex: 1 calc(50% - 1rem);
+}
+.card img{
+    height: 400px;
+}
+@media(max-width:768px){
+    .card img{
+        height: 200px;
+    }
+}
+.card p{
+    margin-left: 1rem;
+    text-align: center;
+}
+.card p span{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*IMAGEN CAMBIO SECCION*/
+.imagen-cambio-seccion{
+    height: 400px;
+    background-image: url(../img/cambio-seccion.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+}
+@media(min-width:768px){
+    .imagen-cambio-seccion{
+        background-attachment: fixed;
+    }
+}
+@media(max-width:768px){
+    .imagen-cambio-seccion{
+        height: 300px;
+    }
+}
+.imagen-cambio-seccion h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+@media(max-width:768px){
+    .imagen-cambio-seccion h2{
+        font-size: 2rem;
+    }
+}
+#quien-somos p{
+    font-size: 1.6rem;
+}
+.boton-whatsapp{
+    font-size: 5rem;
+    position: fixed;
+    bottom: 1rem;
+    margin-left: 1rem;
+    
+}
+.boton-whatsapp a{
+    text-decoration: none;
+    color: green;
+    
+}
